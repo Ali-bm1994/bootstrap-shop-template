@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Playwrite+AU+QLD:wght@100..400&display=swap");
+@font-face {
+  font-family: "vazir";
+  src: url(../fonts/Vazir.ttf);
+}
+body {
+  font-family: "vazir", sans-serif;
+  font-size: 2rem;
+}
+.lalezar {
+  font-family: "lalezar";
+}
+@media screen and (min-width: 768px) {
+  .position-md-fixed {
+    position: fixed;
+  }
+}
+.course-list {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 0;
+}
+.course-list-item {
+  display: flex;
+  padding: 10px 15px;
+}
+.course-list-item:hover {
+  background-color: rgb(240, 240, 240);
+}
+#caret i {
+  transition: transform 1s ease;
+}
+
+#caret i.rotate {
+  transform: rotate(180deg);
+}
+.header {
+  background: url("../images/header/header-bg.png") top center no-repeat;
+  background-size: cover;
+}
+.service-box {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-bottom: 4px solid;
+  border-radius: 5px;
+}
+.read-moore {
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+.service-box.border-primary:hover {
+  background: #0d6efd;
+}
+.service-box.border-success:hover {
+  background: green;
+}
+.service-box.border-warning:hover {
+  background: orangered;
+}
+.service-box:hover{
+  color: white;
+}
+.service-box:hover .read-moore{
+color: white !important;
+}
+footer{
+  background-color: #f2f5fc;
+}
